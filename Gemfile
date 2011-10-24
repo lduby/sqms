@@ -18,6 +18,13 @@ end
 
 gem 'jquery-rails'
 
+# Gems to use JS 
+gem 'execjs'
+gem 'therubyracer'
+
+# To use multi table inheritance
+gem 'heritage'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

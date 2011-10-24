@@ -1,0 +1,70 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-10-19 15:33:26 +0200
+Served asset /rails.png - 200 OK (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 23:39:41 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (24.7ms)
+Compiled application.css  (4ms)  (pid 5194)
+Compiled home.css  (142ms)  (pid 5194)
+Compiled application.js  (28ms)  (pid 5194)
+Compiled jquery.js  (21ms)  (pid 5194)
+Compiled jquery_ujs.js  (1ms)  (pid 5194)
+Compiled home.js  (202ms)  (pid 5194)
+Completed 200 OK in 705ms (Views: 704.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-19 23:39:43 +0200
+Served asset /application.css - 200 OK (68ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-19 23:39:43 +0200
+Served asset /home.css - 200 OK (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-19 23:39:43 +0200
+Served asset /jquery.js - 200 OK (21ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-19 23:39:43 +0200
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-19 23:39:43 +0200
+Served asset /jquery_ujs.js - 200 OK (56ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-19 23:39:43 +0200
+Served asset /home.js - 200 OK (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-20 12:02:19 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-20 12:02:19 +0200
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-20 12:02:19 +0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-20 12:02:19 +0200
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-20 12:02:19 +0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-20 12:02:19 +0200
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-20 12:02:19 +0200
+Served asset /application.js - 200 OK (0ms)
