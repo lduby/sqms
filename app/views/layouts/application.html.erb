@@ -1,14 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Sqms</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <%= stylesheet_link_tag 'standard' %>
+      <%= javascript_include_tag :application %>
+      <title>SQMS</title>
+  </head>
+  <body>
+    <div id="header">
+		<div id="appname">
+			<h1>Software Quality Management System</h1>
+		</div>
+		<div id="minilinks">
+			<%= render 'shared/navigation' %>
+		</div>
+	</div>
+	<div id="navbar">
+		<div id="navlist">
+			<%= render 'shared/menu' %>
+        </div>
+	</div>
+	
+	<div id="content">
+		<%- flash.each do |name, msg| -%>
+		<%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+		<%- end -%>
+      <%= yield %>
+    </div>
+    <div id="footer">
 
-<%= yield %>
-
-</body>
+    </div>
+  </body> 
 </html>

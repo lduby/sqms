@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -11,8 +11,8 @@ gem 'sqlite3'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails', "  ~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
+  gem 'sass-rails'
+  gem 'coffee-rails'
   gem 'uglifier'
 end
 
@@ -24,6 +24,12 @@ gem 'therubyracer'
 
 # To use multi table inheritance
 gem 'heritage'
+
+# To manage authentication
+gem 'devise'
+
+# To manage user priviledges
+gem 'cancan'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -38,3 +44,5 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+gem 'sprockets'

@@ -1,6 +1,13 @@
 Sqms::Application.routes.draw do
+  
   #get "home/index"
   root :to => "home#index"
+  devise_for :users
+  #resources :users, :only => :show
+  resources :users
+  resources :stories
+  
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

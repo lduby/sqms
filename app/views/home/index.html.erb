@@ -1,2 +1,15 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<% if user_signed_in? %>
+  <h3>Welcome <%= @current_user.name %> (<%= @current_user.roles.first.name %>) </h3>
+  <% case @current_user.roles.first.name %>
+  <% when "Analyst" %>
+    <%= render 'dashboard_analyst' %>
+  <% when "Developer" %>
+    <%= render 'dashboard_developer' %>
+  <% when "Tester" %>
+    <%= render 'dashboard_tester' %>
+  <% else %>
+    <%= render 'userslist' %> 
+  <% end %>
+<% else %>
+  <h3>Welcome Guest</h3>
+<% end %>

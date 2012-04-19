@@ -1,7 +1,7 @@
 class CreateStories < ActiveRecord::Migration
   def change
     create_table :stories do |t|
-      t.string :role
+      t.string :actor
         t.text :goal
         t.text :benefit
       t.string :priority
