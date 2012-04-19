@@ -1,0 +1,13 @@
+%h4 Users list
+- @users.each do |user|
+  %p
+    User: #{link_to user.name, user} | Roles :
+    - unless user.roles.nil?
+      - user.roles.each do |role|
+        = role.name
+        (
+        - role.permissions.each do |perm|
+          = perm.name
+          ,
+        ),
+      ,
