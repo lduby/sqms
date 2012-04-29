@@ -1,3 +1,13 @@
-%h3 Home
-- @users.each do |user|
-  %p User: #{link_to user.name, user}
+- if user_signed_in?
+  %h3 Welcome #{current_user.name} (#{current_user.roles.first.name})
+  - case current_user.roles.first.name
+  - when "analyst"
+    = render 'dashboard_analyst'
+  - when "developer"
+    = render 'dashboard_developer'
+  - when "tester"
+    = render 'dashboard_tester'
+  - else
+    = render 'userslist'
+- else
+  %h3 Welcome Guest

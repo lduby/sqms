@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Sqms3::Application.load_tasks
+Sqms::Application.load_tasks

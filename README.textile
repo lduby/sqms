@@ -1,4 +1,4 @@
-h1. Sqms3
+h1. Sqms
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
