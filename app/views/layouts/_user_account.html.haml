@@ -1,0 +1,12 @@
+- if user_signed_in?
+  .btn-group.pull-right
+    %a.btn.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+      %i.icon-user
+      #{current_user.name}
+      %span.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => edit_user_registration_path } Profile
+      %li.divider
+      %li
+        %a{:href => destroy_user_session_path, :method=>'delete'} Sign Out
