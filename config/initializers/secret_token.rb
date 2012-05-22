@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Sqms3::Application.config.secret_token = 'c8edcdda1cd656afd4054ef40839ec09d5338e64b6370f1b67beff6b5ac63b4058ba4223ab5db9ba68f5f6442d9d165a4488448482a4c504cedb4ad11714fb23'
+Sqms::Application.config.secret_token = '8cc48ce2e4c10b512bea104cf860b698160df1e195d268c19c5117787a82a0fd2854fa1bd653f55d5d8fa04a7a5a611719806542e17df9537581f1e43b52f5dd'
