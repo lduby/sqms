@@ -1,0 +1,10 @@
+%h2 User Stories
+.container-fluid
+  .row-fluid
+    .span4
+      #stories_list= render :partial => 'stories_list'
+    .span8
+      #story_details
+        - if can? :create, Story
+          = render :partial => 'form'
+= will_paginate

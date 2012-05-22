@@ -1,0 +1,14 @@
+- if @story.errors.any?
+  :plain
+    $("#flash_notice").hide(300);
+    $("#story_errors").html("#{escape_javascript(error_messages_for(@story))}");
+    $("#story_errors").show(300);
+- else
+  :plain
+    $("#story_errors").hide(300);
+    $("#flash_notice").html("#{escape_javascript(flash[:notice])}");
+    $("#flash_notice").show(300);
+    $(":input:not(input[type=submit])").val("");  
+    $("#stories_list").html("#{escape_javascript( render(:partial => "stories_list") )}");
+    $("#story_details").html("#{escape_javascript( render(:partial => "view") )}");
+

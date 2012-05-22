@@ -1,0 +1,7 @@
+:plain
+  $("#story_errors").hide(300);
+  $("#flash_notice").html("#{escape_javascript(flash[:notice])}");
+  $("#flash_notice").show(300);
+  $("#stories_list").html("#{escape_javascript( render(:partial => "stories_list") ) }");
+  $("#story_details").html("#{escape_javascript( render(:partial => "form") )}");
+  $(":input:not(input[type=submit])").val("");  

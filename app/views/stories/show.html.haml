@@ -1,0 +1,9 @@
+%p Story: #{@story.title}
+%p
+  As a: #{@story.actor}
+  %br/ 
+  I want to: #{@story.goal}
+  %br/
+  So that: #{@story.benefit}
+%p Story Points: #{@story.story_points}
+%p Priority: #{@story.priority if @story.priority}

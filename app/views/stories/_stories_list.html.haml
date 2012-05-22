@@ -1,0 +1,7 @@
+.well.sidebar-nav
+  %ul.nav.nav-list
+    %li.nav-header Stories (by Creation Date)
+    - @stories.each do |story|
+      %li 
+        #{link_to story.title, story, :remote => true}
+    = will_paginate
