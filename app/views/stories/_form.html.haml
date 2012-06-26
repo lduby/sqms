@@ -1,19 +1,26 @@
 = form_for(@story, :remote => true) do |f|
   %p
-    = f.label :title
-    = f.text_field :title
-  %p
-    = f.label :actor, "As a"
-    %br/
-    = f.text_field :actor
-  %p
-    = f.label :goal, "I want to"
-    %br/
-    = f.text_field :goal
-  %p
-    = f.label :benefit, "So that"
-    %br/
-    = f.text_field :benefit
+    - if @story.title
+      = f.text_field :title, :value => @story.title
+    - else 
+      = f.text_field :title, :value => 'Title'
+  .well
+    %table
+      %tr
+        %td
+          = f.label :actor, "As a"
+        %td
+          = f.text_field :actor
+      %tr
+        %td
+          = f.label :goal, "I want to"
+        %td
+          = f.text_field :goal
+      %tr
+        %td
+          = f.label :benefit, "So that"
+        %td
+          = f.text_field :benefit
   %p
     = f.label :priority
     %br/

@@ -2,6 +2,19 @@
   %ul.nav.nav-list
     %li.nav-header Stories (by Creation Date)
     - @stories.each do |story|
-      %li 
-        #{link_to story.title, story, :remote => true}
+      - if story == @story
+        %li.active
+          #{link_to story.title, story, :remote => true}
+      - else
+        %li 
+          #{link_to story.title, story, :remote => true}
     = will_paginate
+
+:javascript
+  $(document).ready(function() {
+  $('#stories_list li').click(
+  function() {
+        $('#stories_list li').removeClass("active");
+        $(this).addClass("active");
+  });
+  });

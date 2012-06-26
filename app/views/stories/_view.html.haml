@@ -1,12 +1,24 @@
-%p 
-  Story: #{@story.title} | 
-  = link_to "Edit", edit_story_path(@story), :remote => true 
-  = link_to "Destroy", @story, :remote => true, :confirm => 'Are you sure?', :method => :delete
-%p
-  As a: #{@story.actor}
-  %br/ 
-  I want to: #{@story.goal}
-  %br/
-  So that: #{@story.benefit}
+%h3 
+  #{@story.title}
+  .pull-right
+    = link_to "Edit", edit_story_path(@story), :remote => true, :class => 'btn btn-mini'
+    = link_to "Destroy", @story, :remote => true, :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-mini btn-danger'
+.well
+  %table
+    %tr
+      %td{:min_width => "10%"} 
+        %b As a
+      %td 
+        #{@story.actor}
+    %tr
+      %td{:min_width => "1000px;"}
+        %b I want to
+      %td
+        #{@story.goal}
+    %tr
+      %td{:min_width => "100px;"}
+        %b So that
+      %td
+        #{@story.benefit}
 %p Story Points: #{@story.story_points}
 %p Priority: #{@story.priority if @story.priority}
