@@ -1,2 +1,3 @@
 :plain
-  $("#story_details").html("#{escape_javascript(render(:partial => "view"))}");
+  $("#story_details").hide("fast", function() {$("#story_details").html("#{escape_javascript(render(:partial => "view"))}"); $("#story_details").show("fast");});
+
